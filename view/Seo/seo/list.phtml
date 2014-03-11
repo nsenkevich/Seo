@@ -1,0 +1,45 @@
+<? $addBuilder = $this->url('seo/add'); ?>
+
+
+<div class="span9">
+  <a href="<?= $addBuilder; ?>" class="btn btn-blue">Add Seo Record</a>
+</div>
+
+<div class="span9">
+  <p id="responsestatus" class="alert alert-success hide"></p>
+  <?= $this->grid; ?>
+</div>
+
+
+<div class="modal hide" id="updateModal" >
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Update Work Examples Image</h3>
+  </div>
+  <div class="modal-body">
+    <!-- remote content will be inserted here via jQuery load() -->
+  </div>
+</div>
+
+<div id="removeModal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> × </button>
+    <h3 id="myModalLabel">Remove File</h3>
+  </div>
+  <div class="modal-body">
+    <!-- remote content will be inserted here via jQuery load() -->
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+<?
+$this->inlineScript()->appendScript(<<<EOT
+    $('body').on('hidden', '.modal', function () {
+        $(this).removeData('modal');
+    });
+EOT
+);
+?>
+

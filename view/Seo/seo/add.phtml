@@ -1,0 +1,16 @@
+<div class="span9">
+  <div class="box">
+    <div class="box-content">
+      <?
+      $form = $this->form;
+      $form->setAttribute('action', $this->url('seo/add'))->prepare();
+      echo $this->strokerFormPrepare('seoForm', $form);
+      ?>
+      <span class="form-legend">Seo</span>
+      <?= $this->formTwb($form); ?>
+    </div>
+  </div>
+</div>
+
+
+

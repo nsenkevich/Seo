@@ -1,0 +1,8 @@
+<?
+
+$updateUrl = $this->url('seo/update', array('id' => $id));
+$form = $this->form;
+$form->setAttribute('action', $updateUrl)->prepare();
+echo $this->strokerFormPrepare('seoForm', $form);
+echo $this->formTwb($form);
+?>

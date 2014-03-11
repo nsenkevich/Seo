@@ -1,0 +1,31 @@
+{
+    "name": "nsenkevich/seo",
+    "description": "Seo ZF2 Module help to add titles, description and keywords for different page types",
+    "license": "BSD-3-Clause",
+    "type": "module",
+    "keywords": [
+        "zendframework",
+	"zf2",
+        "seo",
+	"module"
+    ],
+    "homepage": "https://github.com/nsenkevich/Seo",
+    "authors": [
+        {
+            "name": "Nikolai Senkevich",
+            "email": "nsenkevich@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+	"zendframework/zendframework": ">=2.1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Seo": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}

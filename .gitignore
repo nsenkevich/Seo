@@ -1,0 +1,9 @@
+clover.xml
+.idea
+.DS_Store
+!.gitignore
+.composer.lock
+composer.lock
+vendor/*
+.idea
+composer.phar
